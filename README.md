@@ -1,2 +1,4 @@
 # movie_project
-To create CRUD application
+The aim of the project is to To create a CRUD application with utilisation of supporting tools,
+methodologies and technologies that encapsulate all core modules
+covered during training
