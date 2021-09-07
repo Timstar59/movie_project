@@ -1,0 +1,21 @@
+<html>
+    <title>Flim form</title>
+<body>
+    <div class="form" >
+      <form method="POST" action="">
+          {{ form.movie_name.label }} {{ form.movie_name }}
+          <br>
+          {{ form.movie_genre.label }} {{ form.movie_genre }}
+          <br>
+          {{ form.movie_rating }} {{ form.movie_rating }}
+          <br>
+          {{ form.director.label }} {{ form.director }}
+          <br>
+          {{ form.in_cinema }} {{ form.in_cinema }}
+          <br>
+          {{form.submit}}
+      </form>
+    </div>
+</body>
+
+</html>
