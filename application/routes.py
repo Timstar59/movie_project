@@ -1,7 +1,7 @@
 from flask import render_template, url_for, redirect, request
 from application import app, db
 from application.models import Film_ondemand, Films
-from application.forms import FlaskForm 
+from application.forms import FlaskForm, Filmform
 
 @app.route('/home', methods=['GET', 'POST'])
 def home():
@@ -12,7 +12,7 @@ def home():
         movie_genre = form.movie_genere.data
         movie_rating = form.movie_rating.data
         director = form.director.data
-        in_cinema = form.in_cinema.data
+        release_date = form.release_date.data
     
     return render_template('home.html', form=form)
 

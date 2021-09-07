@@ -1,5 +1,5 @@
 from flask_wtf import FlaskForm
-from wtforms import StringField, BooleanField, SubmitField, SelectField, IntegerField
+from wtforms import StringField, BooleanField, SubmitField, SelectField, IntegerField, DateField
 from wtforms.validators import DataRequired, ValidationError
 
 class Filmform(FlaskForm):
@@ -7,11 +7,7 @@ class Filmform(FlaskForm):
     movie_genre = IntegerField('movie genre')
     movie_rating = IntegerField('movie rating')
     director = StringField('Director name')
-    in_cinema = SelectField('in cinema', choices=[
-        ('yes','Yes'),
-        ('no', 'No'),
-        ('')
-    ])
+    release_date = DateField('Realease date')
     submit = SubmitField('submit')
     
 
