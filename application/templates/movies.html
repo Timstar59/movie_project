@@ -1,25 +1,33 @@
 <html>
     <title>Flim form</title>
-    <h1>Hi! these are a list of movies </h1>
+    <h1>Hello movie Fans! </h1>
+
+    <nav>
+        <ul>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('add') }}">add a film</a>
+            <a href="{{ url_for('add') }}">update</a>
+            <a href="{{ url_for('movies') }}">Movie list</a>
+        </ul>
+    </nav>
 
     <body>
         <ul>
-        {% block information %}
-        {% for Films in movies %}
-        <br><br>
-        <li>Movie ID: {{ Films.fk_movie_id }}</li>
-        <li>Movie name:{{ Films.movie_name }}</li>
-        <li>Movie genre: {{ Films.movie_genre }}</li>
-        <li>Movie Rating : {{ Films.movie_rating }}</li>
-        <li>Director: {{ Films.director }}</li>
-        <li>release date: {{ Films.release_date }}</li>
-         
 
+            {% block information %}
+            {% for Films in movies %}
+            <br><br>
+            <li>Movie ID: {{ Films.fk_movie_id }}</li>
+            <li>Movie name:{{ Films.movie_name }}</li>
+            <li>Movie genre: {{ Films.movie_genre }}</li>
+            <li>Movie Rating : {{ Films.movie_rating }}</li>
+            <li>Director: {{ Films.director }}</li>
+            <li>release date: {{ Films.release_date }}</li>
+            <a href="{{ url_for('delete',id=Films.fk_movie_id) }}">Delete</a>
 
-      
-        {% endfor %}
-        {% endblock information %}
-    </ul>
+            {% endfor %}
+            {% endblock information %}
+        </ul>
 
     </body>
 

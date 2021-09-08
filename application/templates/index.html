@@ -1,15 +1,21 @@
 <html>
     <title>Index</title>
-    <h1>This is where you cann add your most recent movies</h1>
+    <h1>Welcome! this is the site for Movie Fanatics</h1>
+
+    <nav>
+        <ul>
+            <ul>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('add') }}">add a film</a>
+                <a href="{{ url_for('add') }}">update</a>
+                <a href="{{ url_for('movies') }}">Movie list</a>
+            </ul>
+            
+        </ul>
+    </nav>
 
     <body>
-        {
-
-
         
-        << /div>
-
-            {% endfor %}
     </body>
 
 </html>

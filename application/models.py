@@ -14,3 +14,4 @@ class Films(db.Model):
     release_date = db.Column(db.DateTime)
     fk_movie_id = db.Column(db.Integer, db.ForeignKey('film_ondemand.movie_id'), nullable=False)
     
+

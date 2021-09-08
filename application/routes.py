@@ -32,18 +32,17 @@ def add():
 
 @app.delete('/delete/<int:id>')
 def delete(id):
-    Films_to_delete = Films.query.get_or_404(id)
+    Films_to_delete = Films.query.get(id)
     db.session.delete(Films_to_delete)
     db.session.commit()
     return redirect(url_for('movies'))
-    return render_template('index.html')
 
 #@app.update('/update/<int:id>', methods =['GET', 'POST'])
 #def update(id):
-  #  form = Filmform()
+ #   film = Filmform
   #  films = Films.query.get(id)
    # db.session.commit()
    # return redirect(url_for('movies'))
-   ## return render_template('movies.html')
+   # return render_template('movies.html')
         
 

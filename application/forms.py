@@ -11,5 +11,5 @@ class Filmform(FlaskForm):
     movie_id = IntegerField('Film number')
     submit = SubmitField('submit')
     
-class read_Filmform(FlaskForm):
-    movie = SelectField('movie')
+
+

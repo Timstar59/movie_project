@@ -1,8 +1,16 @@
 <html>
     <title>Flim form</title>
     <h1>Hi! movie fans input your most recent film you watched</h1>
-
+        <nav>
+            <ul>
+                <a href="{{ url_for('home') }}">Home</a>
+                <a href="{{ url_for('add') }}">add a film</a>
+                <a href="{{ url_for('add') }}">update</a>
+                <a href="{{ url_for('movies') }}">Movie list</a>
+            </ul>
+        </nav>
     <body>
+        
         <div class="form">
             <form method="POST" action="">
                 {{ form.movie_name.label }} {{ form.movie_name }}
