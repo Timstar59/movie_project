@@ -1,20 +1,21 @@
 <html>
     <title>Flim form</title>
+    <h1>Hi! movie fans input your most recent film you watched</h1>
 
     <body>
         <div class="form">
             <form method="POST" action="">
                 {{ form.movie_name.label }} {{ form.movie_name }}
-                <br>
+                <br> <br>
                 {{ form.movie_genre.label }} {{ form.movie_genre }}
-                <br>
+                <br> <br>
                 {{ form.movie_rating.label }} {{ form.movie_rating }}
-                <br>
+                <br> <br>
                 {{ form.director.label }} {{ form.director }}
-                <br>
+                <br> <br>
                 {{ form.release_date.label }} {{ form.release_date }}
-                <br>
-                {{form.submit}}
+                <br> <br>
+                {{ form.submit }}
             </form>
         </div>
     </body>

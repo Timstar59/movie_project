@@ -10,4 +10,5 @@ class Filmform(FlaskForm):
     release_date = DateField('Realease date')
     submit = SubmitField('submit')
     
-
+class read_Filmform(FlaskForm):
+    movie = SelectField('movie')
