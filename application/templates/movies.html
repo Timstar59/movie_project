@@ -1,9 +1,26 @@
 <html>
     <title>Flim form</title>
     <h1>Hi! these are a list of movies </h1>
+
     <body>
-        <form
-        
+        <ul>
+        {% block information %}
+        {% for Films in movies %}
+        <br><br>
+        <li>Movie ID: {{ Films.fk_movie_id }}</li>
+        <li>Movie name:{{ Films.movie_name }}</li>
+        <li>Movie genre: {{ Films.movie_genre }}</li>
+        <li>Movie Rating : {{ Films.movie_rating }}</li>
+        <li>Director: {{ Films.director }}</li>
+        <li>release date: {{ Films.release_date }}</li>
+         
+
+
+      
+        {% endfor %}
+        {% endblock information %}
+    </ul>
+
     </body>
 
 </html>

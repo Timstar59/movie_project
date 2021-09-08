@@ -11,7 +11,8 @@ def home():
 def movies():
     movies = Films.query.all()
     return render_template('movies.html', movies = movies)
-    
+
+
 @app.route('/add_movie', methods=['GET', 'POST'])
 def add():
     form = Filmform()
@@ -22,10 +23,27 @@ def add():
         n_movie_rating = form.movie_rating.data
         n_director = form.director.data
         n_release_date = form.release_date.data
-        movies = Films(movie_name=n_movie_name, movie_genre=n_movie_genre, movie_rating=n_movie_rating, director=n_director, release_date=n_release_date)
+        n_movie_id = form.movie_id.data
+        movies = Films(movie_name=n_movie_name, movie_genre=n_movie_genre, movie_rating=n_movie_rating, director=n_director, release_date=n_release_date, fk_movie_id=n_movie_id)
         db.session.add(movies)
         db.session.commit()
         return redirect(url_for('movies'))
     return render_template('add_movie.html', form=form)
 
+@app.delete('/delete/<int:id>')
+def delete(id):
+    Films_to_delete = Films.query.get_or_404(id)
+    db.session.delete(Films_to_delete)
+    db.session.commit()
+    return redirect(url_for('movies'))
+    return render_template('index.html')
+
+#@app.update('/update/<int:id>', methods =['GET', 'POST'])
+#def update(id):
+  #  form = Filmform()
+  #  films = Films.query.get(id)
+   # db.session.commit()
+   # return redirect(url_for('movies'))
+   ## return render_template('movies.html')
+        
 
