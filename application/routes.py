@@ -37,20 +37,22 @@ def delete(id):
     db.session.commit()
     return redirect(url_for('movies'))
 
-
-@app.route('/update/<int:id>', methods =['GET', 'POST'])
+@app.route('/update/<int:id>', methods =['GET','POST'])
 def update(id):
-    film = Filmform
-    film_to_update = Films.query(id)
-    if request.method == "POST":
-        film_to_update.movie_name = request.Filmform['movie_name']
-        film_to_update.movie_genre = request.Filmform['movie_genre']
-        film_to_update.movie_rating = request.Filmform['movie_rating']
-        film_to_update.director = request.Filmform['director']
-        film_to_update.release_date = request.Filmform['release_date']
-        db.session.comit()
+    update_film = Films.query.filter_by(movie_id=id).first()
+    if request.method == 'POST':
+        update_film.movie_name = request.form.get('movie_name')
+        update_film.movie_genre = request.form.get('movie_genre')
+        update_film.movie_rating = request.form.get('movie_rating')
+        update_film.director = request.form.get('director')
+        update_film.release_date = request.form.get('release_date')
+        db.session.add(update_film)
+        db.session.commit()
         return redirect(url_for('movies'))
-
     
+    return render_template('update.html', film=update_film)
+    
+
+
         
 
