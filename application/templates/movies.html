@@ -23,8 +23,8 @@
             <li>Movie Rating : {{ Films.movie_rating }}</li>
             <li>Director: {{ Films.director }}</li>
             <li>release date: {{ Films.release_date }}</li>
-            <a href="{{ url_for('delete',id=Films.fk_movie_id) }}">Delete</a>
-            <a href="{{ url_for('update',id=Films.fk_movie_id) }}">Update</a>
+            <a href="{{ url_for('delete',id=Films.movie_id) }}">Delete</a>
+            <a href="{{ url_for('update',id=Films.movie_id) }}">Update</a>
 
             {% endfor %}
             {% endblock information %}

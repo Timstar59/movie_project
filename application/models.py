@@ -7,7 +7,8 @@ class Film_ondemand(db.Model):
     
 
 class Films(db.Model):
-    movie_name = db.Column(db.String(60), nullable=False, primary_key=True)
+    movie_id = db.Column(db.Integer, nullable=False, primary_key=True)
+    movie_name = db.Column(db.String(60), nullable=False)
     movie_genre = db.Column(db.String(30))
     movie_rating = db.Column(db.Float, nullable=False)
     director = db.Column(db.String(60))

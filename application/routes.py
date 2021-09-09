@@ -30,10 +30,10 @@ def add():
         return redirect(url_for('movies'))
     return render_template('add_movie.html', form=form)
 
-@app.delete('/delete/<int:id>')
+@app.route('/delete/<int:id>', methods =['GET','POST'])
 def delete(id):
-    Films_to_delete = Films.query.get(id)
-    db.session.delete(Films_to_delete)
+    films_to_delete = Films.query.get(id)
+    db.session.delete(films_to_delete)
     db.session.commit()
     return redirect(url_for('movies'))
 
