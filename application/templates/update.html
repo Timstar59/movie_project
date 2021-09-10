@@ -16,13 +16,14 @@
             <form method="POST" action="/update/{{ film.movie_id }}">
 
 
-                <input type="text" name="movie_name" value="{{ film.movie_name }}">
-                <br>
-                <input type="text" name="movie_genre" value="{{ film.movie_genre }}">
-                <br>
-                <input type="text" name="movie_rating" value="{{ film.movie_rating }}">
-                <br>
-                <input type="text" name="director" value="{{ film.director }}">
+               Movie name <input type="text" name="movie_name" value="{{ film.movie_name }}"> 
+                <br><br>
+                Movie genre<input type="text" name="movie_genre" value="{{ film.movie_genre }}">
+                <br><br>
+               Movie Rating <input type="text" name="movie_rating" value="{{ film.movie_rating }}">
+                <br><br>
+               Director  <input type="text" name="director" value="{{ film.director }}">
+               <br> <br>
                 
 
                 <button type="submit"> Submit</button>

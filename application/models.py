@@ -3,7 +3,7 @@ from application import db
 class Film_ondemand(db.Model):
     movie_id = db.Column(db.Integer, nullable=False, primary_key=True, unique=True)
     movie_incinema = db.Column(db.Boolean)
-    new_movies = db.Column(db.String(60), nullable=False)
+    new_movies = db.Column(db.String(60))
     
 
 class Films(db.Model):
