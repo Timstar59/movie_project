@@ -7,11 +7,11 @@ At the planning of the project, I initially made a couple of database tables whi
 ![ERD](images/ERD.png)
 
 Upon some advice, the 'Customer_portal' table was taken out so I could reach the MVP for the scope of the project in time. This is the current ERD:
-![ERD2](images/Updated ERD.png)
+![ERD2](images/UpdatedERD.png)
 
 # Risk Assesment
 My risk assessment shows the possible risk that may occur during the development of my project. This helps us to minimize any major faults or setbacks during the project:
-![Risk_assesment])(images/Risk2.png) 
+![Riskassesment])(images/Risk2.png) 
 some fo the risks and measures i identifed was:
 
 * App breaking code getting pushed up to the main branch, the measure for this was to double-check all code is working accordingly and having a backup file somewhere to revert to if things do go wrong.
@@ -25,16 +25,16 @@ Using a continuous integration pipeline was one of the constraints of the projec
 
 # Project Tracking 
  The project was tracked through a Kanban Trello board:
- ![Trelloboard](images/trello before.png)
+ ![Trelloboard](/images/trellobefore.png)
  The board shows the essentials of the project and the process should be moving from left to right as the development of the app progresses through the week.
  
   The backlog is where I stored the aspects I have yet to start, and after I start it relocates into another card which I can then place in the completed card. This visualises what I have done and gives me context on what i have to do next.
 
 # Development
 ## CRUD
-I set up a virtual environment hosted on an aws Ubuntu server, this is where I set up all my installs and requirements for my project.
+I set up a virtual environment hosted on an aws Ubuntu server, this is where I set up all my installs and requirements for my project:
 ![venv](images/venv.png)
-* CRUD
+
 Whilst creating the CRUD Functionality in flask I came across many obstacles, however, i ended up creating a minimalistic app that shows the users movie input, deletes it and updates it
 
 This is where the user inputs a movie ID so it can relate to my second form and then the user can fill in details about the Id of the film, as you can see below 
