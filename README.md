@@ -4,14 +4,14 @@ methodologies and technologies that encapsulate all core modules
 covered during training
 # ERD design
 At the planning of the project i initaily made a couple database tables which i saw to be feesable for the scope of the project. As i was moving on to my risk assesment i quickly figured out that the database i wanted to make was a little bit to ambious for my skills so i had to rethink how i wanted it to look. Prior Database below:
-![ERD] ()
+![ERD](images/ERD.png)
 
 Upon some advice the 'Customer_portal' table was taken out so i could reach the MVP for the scope of the project in time. This is the current ERD:
 ![ERD2]()
 
 #Risk Assesment
 My risk assesment shows the possible risk that may occur during the development of my project.This helps us to minimize any major faults or setbacks during the course of the project:
-![Risk_assesment])()
+![Risk_assesment])()git 
 some fo the risks and measures i identifed was:
 
 * App breaking code getting pushed up to main branch, the measure for this was to double check all code is working accordingly and having a back up file somewhere to revert to if things do go wrong.
