@@ -21,4 +21,25 @@ some fo the risks and measures i identifed was:
 * App Virtual machine goes down, We can try and restore this by creating a new instance of the virtual machine and cloning from github
 
 # CI pipeline
-Using a continuous integration pipeline was one of the constraints of the project, this is what we have been trying to implement through our project. The version control i used for my project was github
+Using a continuous integration pipeline was one of the constraints of the project, this is what we have been trying to implement through our project. The version control i used for my project was github using this was an easy and clear way of of sharing information and collabrating on software development. 
+
+# Project Tracking 
+ The project was tracked through a Kanban Trello board:
+ ![Trello board]()
+ The board shows the essentials of the project and the process should be moving from left to right as the development of the app progresses through the week. With the backlog is where i stored the aspects i have yet to start, and after i start it relocates into a another card which i can then place in the completed card. This visualses what i have done and gives me context what i have to do next.
+
+# Development
+* CRUD
+Whilst creating the CRUD Functinality in flask i came across many obstacles, however i ended up creating a mimimstic app that shows the users movie input, deletes it and updates it:
+![Readfile ]()
+
+I set up a virtual enviroment hosted on a aws Ubuntu server, this is where i set up all my installs and requirments  for my project.
+ * Front end(Jinja)
+ This is where the user inputs a movie ID so it can relate to my second form and then the user can fill in details about the Id of the film, as you can see below 
+ ![addmovie]()
+Here is a form of where the user can input certain details about the details of the film like film_name ![Createmovie]()
+
+Here the user can view all the inputs they have put in and from here users can edit, and delete the movie IDs from the database. ![viewspage]()
+
+# Testing 
+Testing was an essential part of the app, this made sure that the app was running the way it is intended. However this is the side of the project i encountred a lot of errors with so the testing was not at a place i would of liked. Under reveision the testing had breadcrumbs leading to the start of the project. Aligned with the trello board and time i had lef the deciosn was to try and reach the MVP of the scope. Below is the start of the testing as i was tesing to make sure the redirects on each page was working correctly, and showing as intended. 
