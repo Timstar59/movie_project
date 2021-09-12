@@ -30,6 +30,9 @@ Using a continuous integration pipeline was one of the constraints of the projec
  
   The backlog is where I stored the aspects I have yet to start, and after I start it relocates into another card which I can then place in the completed card. This visualises what I have done and gives me context on what i have to do next.
 
+  The screenshot below is a more complete Trello on should show the progression through my app
+  ![Trelloupdate](images/Trello_update.png)
+
 # Development
 ## CRUD
 I set up a virtual environment hosted on an aws Ubuntu server, this is where I set up all my installs and requirements for my project:
