@@ -7,11 +7,11 @@ At the planning of the project i initaily made a couple database tables which i 
 ![ERD](images/ERD.png)
 
 Upon some advice the 'Customer_portal' table was taken out so i could reach the MVP for the scope of the project in time. This is the current ERD:
-![ERD2]()
+![ERD2](images/Updated ERD.png)
 
 #Risk Assesment
 My risk assesment shows the possible risk that may occur during the development of my project.This helps us to minimize any major faults or setbacks during the course of the project:
-![Risk_assesment])()git 
+![Risk_assesment])(images/Screenshot_61.png) 
 some fo the risks and measures i identifed was:
 
 * App breaking code getting pushed up to main branch, the measure for this was to double check all code is working accordingly and having a back up file somewhere to revert to if things do go wrong.
@@ -25,21 +25,21 @@ Using a continuous integration pipeline was one of the constraints of the projec
 
 # Project Tracking 
  The project was tracked through a Kanban Trello board:
- ![Trello board]()
+ ![Trelloboard](images/trello before.png)
  The board shows the essentials of the project and the process should be moving from left to right as the development of the app progresses through the week. With the backlog is where i stored the aspects i have yet to start, and after i start it relocates into a another card which i can then place in the completed card. This visualses what i have done and gives me context what i have to do next.
 
 # Development
-* CRUD
-Whilst creating the CRUD Functinality in flask i came across many obstacles, however i ended up creating a mimimstic app that shows the users movie input, deletes it and updates it:
-![Readfile ]()
 
 I set up a virtual enviroment hosted on a aws Ubuntu server, this is where i set up all my installs and requirments  for my project.
- * Front end(Jinja)
+![venv](images/venv.png)
+* CRUD
+Whilst creating the CRUD Functinality in flask i came across many obstacles, however i ended up creating a mimimstic app that shows the users movie input, deletes it and updates it:
+![Readfile]()
  This is where the user inputs a movie ID so it can relate to my second form and then the user can fill in details about the Id of the film, as you can see below 
- ![addmovie]()
-Here is a form of where the user can input certain details about the details of the film like film_name ![Createmovie]()
+ ![addmovie](images/homepage.png)
+Here is a form of where the user can input certain details about the details of the film like film_name ![Createmovie](images/addfilm.png)
 
-Here the user can view all the inputs they have put in and from here users can edit, and delete the movie IDs from the database. ![viewspage]()
+Here the user can view all the inputs they have put in and from here users can edit, and delete the movie IDs from the database. ![viewspage](images/movielist.png)
 
 # Testing 
 Testing was an essential part of the app, this made sure that the app was running the way it is intended. However this is the side of the project i encountred a lot of errors with so the testing was not at a place i would of liked. Under reveision the testing had breadcrumbs leading to the start of the project. Aligned with the trello board and time i had lef the deciosn was to try and reach the MVP of the scope. Below is the start of the testing as i was tesing to make sure the redirects on each page was working correctly, and showing as intended. 
