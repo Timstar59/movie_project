@@ -2,6 +2,18 @@
 The aim of the project is to To create a CRUD application with the utilisation of supporting tools,
 methodologies and technologies that encapsulate all core modules
 
+## Contents
+*[ERD design](#ERD-design)
+*[Risk Assesment](#Risk-Assesment)
+*[CI pipeline](#CI-pipeline)
+*[Project Tracking](#Project-Tracking)
+*[Development](#Development)
+*[Database](#Database)
+*[Testing](#Testing)
+*[Integration Testing](#Intergration-Testing)
+*[Future improvements](#Future-improvements)
+*[Acknowledgments](#Acknowledgments)
+
 # ERD design
 At the planning of the project, I initially made a couple of database tables which I saw to be feasible for the scope of the project. As I was moving on to my risk assessment I quickly figured out that the database I wanted to make was a little bit too ambitious for my skills so I had to rethink how I wanted it to look. Prior Database below:
 ![ERD](images/ERD.png)
