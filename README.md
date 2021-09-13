@@ -84,5 +84,8 @@ Integration testing would have been added by setting up a Jenkins VM this would 
 * get further testing implemented into all my routes and pages
 * Jenkins implemenation 
 
+
 # Acknowledgments 
 * Test-Driven Development with python- Harry J.W Percival
+* Codemy.com youtube channel (Flask fridays playlist)
+* QA community 
