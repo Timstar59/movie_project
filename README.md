@@ -7,7 +7,7 @@ At the planning of the project, I initially made a couple of database tables whi
 ![ERD](images/ERD.png)
 
 Upon some advice, the 'Customer_portal' table was taken out so I could reach the MVP for the scope of the project in time. This is the current ERD:
-![ERD2](images/UpdatedERD.png)
+![ERD2](images/ERD3.png)
 
 # Risk Assesment
 My risk assessment shows the possible risk that may occur during the development of my project. This helps us to minimize any major faults or setbacks during the project:
@@ -22,6 +22,7 @@ some fo the risks and measures i identifed was:
 
 # CI pipeline
 Using a continuous integration pipeline was one of the constraints of the project, this is what we have been trying to implement through our project. The version control I used for my project was Github using this was an easy and clear way of sharing information and collaborating on software development. 
+![Ci_pipeline](images/CI.png)
 
 # Project Tracking 
  The project was tracked through a Kanban Trello board:
@@ -32,6 +33,7 @@ Using a continuous integration pipeline was one of the constraints of the projec
 
   The screenshot below is a more complete Trello on should show the progression through my app
   ![Trelloupdate](images/Trello_update.png)
+  The user stories explain the potenial needs of the user. 
 
 # Development
 ## CRUD
@@ -57,7 +59,7 @@ At the beginning of my project I was working on the inbuilt database sqlite, thi
 ![connection_string](images/dadatbase.png)
 As you can see my connection string is hidden if this case and I pushed into GitHub anyone would have been able to work out the location of my db and my username and password. To counter this I used the os getenv method, which hides confidential code. Then all I have to do is export my 'DATABASE_URI' and my 'SECRET_KEY' then the db is more secure.
 # Testing 
-Testing was an essential part of the app, this made sure that the app was running the way it is intended. However, this is the side of the project I encountered a lot of errors with so the testing was not at a place I would have liked. Under the revision, the testing had breadcrumbs leading to the start of the project.
+Testing was an essential part of the app, to see if was working as inteneded.my goal was to test the create,delete and read However, this is the side of the project I encountered a lot of errors with so the testing was not at a place I would have liked. Under the revision, the testing had breadcrumbs leading to the start of the project.
 
 Aligned with the Trello board and time I had left the decision was to try and reach the MVP of the scope. Below is the start of the testing as I was testing to make sure the redirects on each page was working correctly, and showing as intended. 
 
@@ -69,3 +71,6 @@ Integration testing would have been added by setting up a Jenkins VM this would 
 * implementing a cinema location if the user wants to go and see the film in  a specfic venu
 * get further testing implemented into all my routes and pages
 * Jenkins implemenation 
+
+# Acknowledgments 
+* Test-Driven Development with python- Harry J.W Percival

@@ -41,10 +41,6 @@ class TestViewshome(TestBase):
          self.assertEqual(response.status_code, 200)
          self.assertIn(b'Index', response.data)
 
-#class Test_empty_db(TestBase):
-    #def test_empty_db(self):
-        #response = self.client.get('/')
-        #self.assertIn(b'no entry in here' in response.data)
 
 
 class TestViews1(TestBase):
@@ -86,7 +82,7 @@ class Testupdate(TestBase):
             #url_for('update'),
             #follow_redirects=True
        # )
-
+#tried and tested methods getting same error as before, try again at later date
 #class TestAddentry(TestBase): 
     #def test_add_movie(self):
         #response = self.client.post(url_for('add'),
@@ -103,14 +99,5 @@ class Testupdate(TestBase):
          
 
 
-#class TestAdd(TestBase):
-   # def test_add_post(self):
-        #response =self.client.post(url_for('add'),
-        #data = dict(movie_name= 'newWanted',
-        #movie_genre = 'action', movie_rating = 5, director = 'Andy', release_date='1998-02-03', fk_movie_id='99'),
-        #follow_redirects=True
-        #)
 
-#class TestDelete(Test):
-    #def test_delete_
     
