@@ -1,0 +1,35 @@
+<html>
+    <title>Update Film</title>
+    <h1>Update your film</h1>
+    <nav>
+        <ul>
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('add') }}">add a film</a>
+            <a href="{{ url_for('movies') }}">update</a>
+            <a href="{{ url_for('movies') }}">Movie list</a>
+        </ul>
+    </nav>
+
+    <body>
+
+        <div class="form">
+            <form method="POST" action="/update/{{ film.movie_id }}">
+
+
+               Movie name <input type="text" name="movie_name" value="{{ film.movie_name }}"> 
+                <br><br>
+                Movie genre<input type="text" name="movie_genre" value="{{ film.movie_genre }}">
+                <br><br>
+               Movie Rating <input type="text" name="movie_rating" value="{{ film.movie_rating }}">
+                <br><br>
+               Director  <input type="text" name="director" value="{{ film.director }}">
+               <br> <br>
+               release_date <input type="text" name="release_date" value="{{ film.release_date }}">
+                
+
+                <button type="submit"> Submit</button>
+            </form>
+        </div>
+    </body>
+
+</html>
