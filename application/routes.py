@@ -1,11 +1,22 @@
 from flask import render_template, url_for, redirect, request
 from application import app, db
 from application.models import Film_ondemand, Films
-from application.forms import FlaskForm, Filmform
+from application.forms import  Filmform, Film_ondemandform
 
-@app.route('/')
+
+@app.route('/', methods=['GET','POST'])
 def home():
-    return render_template('index.html')
+    form = Film_ondemandform()
+    
+    if request.method == 'POST':
+        movie_id = form.movie_id.data
+        movie_incinema = form.movie_incinema.data
+        new_movie = form.new_movie.data
+        film = Film_ondemand(movie_id=movie_id, movie_incinema=movie_incinema, new_movies=new_movie)
+        db.session.add(film)
+        db.session.commit()
+        return redirect(url_for('add'))
+    return render_template('index.html', form=form)
 
 @app.route('/movies')
 def movies():

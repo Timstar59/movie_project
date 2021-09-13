@@ -2,20 +2,39 @@
     <title>Index</title>
     <h1>Welcome! this is the site for Movie Fanatics</h1>
 
-    <nav>
+<h2>Please pick from the options to add a film update a film or look at your film list</h2>
         <ul>
-            <ul>
-                <a href="{{ url_for('home') }}">Home</a>
-                <a href="{{ url_for('add') }}">add a film</a>
-                <a href="{{ url_for('add') }}">update</a>
-                <a href="{{ url_for('movies') }}">Movie list</a>
-            </ul>
-            
+            <a href="{{ url_for('home') }}">Home</a>
+            <a href="{{ url_for('add') }}">add a film</a>
+            <a href="{{ url_for('movies') }}">update</a>
+            <a href="{{ url_for('movies') }}">Movie list</a>
         </ul>
-    </nav>
+
 
     <body>
+        {% block body %}
         
+
+        <div class='form'>
+            <form method='POST' action=''>
+                <!-- hidden_tag() is required for form validation -->
+                
+                <!-- Each field displays its label followed by the input field itself -->
+                {{ form.movie_id.label }} {{ form.movie_id }}
+                <br>
+                {{ form.movie_incinema.label }} {{ form.movie_incinema }}
+                <br>
+                {{ form.new_movie.label }} {{ form.new_movie }}
+                <br>
+                <!-- form.submit is a button -->
+                {{ form.submit }}
+                <br>
+            </form>
+        </div>
+        
+        {% endblock body%}
+
+
     </body>
 
 </html>
